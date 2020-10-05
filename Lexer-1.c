@@ -5,11 +5,6 @@
 #define Reserved_num 20
 #define MAX_LENGTH 200
 
-union identifier {
-    char *id_val;
-    long long int_val;
-};
-
 char *token;
 long long num;
 char *symbol;
@@ -102,7 +97,7 @@ int isLP(char curChar) { return curChar == '(' ? 1 : 0; }
 int isRP(char curChar) { return curChar == ')' ? 1 : 0; }
 
 int main(int argc, char *argv[]) {
-	argv[1] = "test.txt";
+	// argv[1] = "test.txt";
     if ((fp = fopen(argv[1], "r")) == NULL)
         printf("Counld not open this file! error!\n");
     curChar = fgetc(fp);
