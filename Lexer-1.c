@@ -102,18 +102,18 @@ int isLP(char curChar) { return curChar == '(' ? 1 : 0; }
 int isRP(char curChar) { return curChar == ')' ? 1 : 0; }
 
 int main(int argc, char *argv[]) {
+	argv[1] = "test.txt";
     if ((fp = fopen(argv[1], "r")) == NULL)
         printf("Counld not open this file! error!\n");
+    curChar = fgetc(fp);
     while (!feof(fp)) {
-        curChar = fgetc(fp);
-        if (isSpace(curChar) || isNewLine(curChar) || isTab(curChar))
-            continue;
+        while (isSpace(curChar) || isNewLine(curChar) || isTab(curChar))
+            getChar();
         if (isLetter(curChar)) {
             while (isLetter(curChar) || isDigit(curChar)) {
                 catToken();
                 getChar();
             }
-            retChar();
             if (!reservedOrNot())
                 printf("Ident(%s)\n", token);
             memset(token, 0, sizeof(char) * strlen(token));
@@ -124,7 +124,6 @@ int main(int argc, char *argv[]) {
                 catToken();
                 getChar();
             }
-            retChar();
             num = atoi(token);
             printf("Int(%lld)\n", num);
             num = 0;
@@ -135,8 +134,8 @@ int main(int argc, char *argv[]) {
             if (isEqu(curChar))
                 printf("Assign\n");
             else {
-                retChar();
                 printf("Colon\n");
+                continue;
             }
         } else if (isPlus(curChar))
             printf("Plus\n");
@@ -153,7 +152,10 @@ int main(int argc, char *argv[]) {
             printf("Unknown\n");
             break;
         }
+        getChar();
     }
     fclose(fp);
     return 0;
 }
+
+
