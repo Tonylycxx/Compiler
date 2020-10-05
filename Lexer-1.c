@@ -142,6 +142,8 @@ int main(int argc, char *argv[]) {
             printf("LParenthesis\n");
         else if (isRP(curChar))
             printf("RParenthesis\n");
+        else if(curChar == EOF)
+            break;
         else
         {
             printf("Unknown\n");
