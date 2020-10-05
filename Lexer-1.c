@@ -102,7 +102,6 @@ int isLP(char curChar) { return curChar == '(' ? 1 : 0; }
 int isRP(char curChar) { return curChar == ')' ? 1 : 0; }
 
 int main(int argc, char *argv[]) {
-    argv[1] = "test.txt";
     if ((fp = fopen(argv[1], "r")) == NULL)
         printf("Counld not open this file! error!\n");
     while (!feof(fp)) {
