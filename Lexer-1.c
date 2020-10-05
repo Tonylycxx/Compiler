@@ -148,11 +148,11 @@ int main(int argc, char *argv[]) {
             printf("LParenthesis\n");
         else if (isRP(curChar))
             printf("RParenthesis\n");
-        else
-        {
-            printf("%c Unknown\n", curChar);
-            break;
-        }
+        // else
+        // {
+        //     printf("Unknown\n");
+        //     break;
+        // }
     }
     fclose(fp);
     return 0;
