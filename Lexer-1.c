@@ -15,7 +15,7 @@ long long num;
 char *symbol;
 char curChar;
 FILE *fp;
-const char *Reserved_words[Reserved_num] = {"BEGIN", "END",  "For",
+const char *Reserved_words[Reserved_num] = {"BEGIN", "END",  "FOR",
                                             "IF",    "THEN", "ELSE"};
 const char *Reserved_words_print[Reserved_num] = {"Begin", "End",  "For",
                                                   "If",    "Then", "Else"};
