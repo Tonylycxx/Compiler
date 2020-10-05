@@ -150,7 +150,7 @@ int main(int argc, char *argv[]) {
             printf("RParenthesis\n");
         else
         {
-            printf("Unknown\n");
+            printf("%c Unknown\n", curChar);
             break;
         }
     }
