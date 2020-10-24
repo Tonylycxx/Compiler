@@ -18,6 +18,7 @@ public class Tokenizer {
     }
 
     private void iniReservedWordsList() {
+        reservedWords = new ArrayList<String>();
         reservedWords.add("Begin");
         reservedWords.add("End");
         reservedWords.add("Var");
