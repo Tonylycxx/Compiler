@@ -269,9 +269,7 @@ public final class Analyser {
             }
 
             // 如果没有初始化的话在栈里推入一个初始值
-            if (initialized) {
-//                instructions.add(new Instruction(Operation.STO, getOffset((String) nameToken.getValue(), nameToken.getStartPos())));
-            } else {
+            if (!initialized) {
                 instructions.add(new Instruction(Operation.LIT, 0));
             }
         }
