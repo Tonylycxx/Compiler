@@ -19,11 +19,11 @@ public class Tokenizer {
 
     private void iniReservedWordsList() {
         reservedWords = new ArrayList<String>();
-        reservedWords.add("Begin");
-        reservedWords.add("End");
-        reservedWords.add("Var");
-        reservedWords.add("Const");
-        reservedWords.add("Print");
+        reservedWords.add("begin");
+        reservedWords.add("end");
+        reservedWords.add("var");
+        reservedWords.add("const");
+        reservedWords.add("print");
     }
 
     // 这里本来是想实现 Iterator<Token> 的，但是 Iterator 不允许抛异常，于是就这样了
