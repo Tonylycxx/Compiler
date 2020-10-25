@@ -93,13 +93,13 @@ public class Tokenizer {
 
     private TokenType getReservedTokenType(String value_string) {
         switch (value_string.charAt(0)) {
-            case 'B':
+            case 'b':
                 return TokenType.Begin;
-            case 'E':
+            case 'e':
                 return TokenType.End;
-            case 'V':
+            case 'v':
                 return TokenType.Var;
-            case 'C':
+            case 'c':
                 return TokenType.Const;
             default:
                 return TokenType.Print;
