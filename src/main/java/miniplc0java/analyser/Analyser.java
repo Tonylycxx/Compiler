@@ -224,6 +224,10 @@ public final class Analyser {
             // 变量名
             var nameToken = expect(TokenType.Ident);
 
+            // 加入符号表
+            String name = (String) nameToken.getValue();
+            addSymbol(name, true, true, nameToken.getStartPos());
+            
             // 等于号
             expect(TokenType.Equal);
 
@@ -233,9 +237,6 @@ public final class Analyser {
             // 分号
             expect(TokenType.Semicolon);
 
-            // 加入符号表
-            String name = (String) nameToken.getValue();
-            addSymbol(name, true, true, nameToken.getStartPos());
             // 这里把常量值直接放进栈里，位置和符号表记录的一样。
             // 更高级的程序还可以把常量的值记录下来，遇到相应的变量直接替换成这个常数值，
             // 我们这里就先不这么干了。
