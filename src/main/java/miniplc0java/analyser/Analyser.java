@@ -397,7 +397,7 @@ public final class Analyser {
         while (true) {
             // 预读可能是运算符的 token
             Token op = peek();
-            if (op.getTokenType() != TokenType.Mult || op.getTokenType() != TokenType.Div)
+            if (op.getTokenType() != TokenType.Mult && op.getTokenType() != TokenType.Div)
                 break;
 
             // 运算符
