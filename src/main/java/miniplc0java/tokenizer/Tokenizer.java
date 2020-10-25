@@ -68,7 +68,7 @@ public class Tokenizer {
         while (Character.isDigit(it.peekChar())) {
             value_string.append(it.nextChar());
         }
-        return new Token(TokenType.None, Integer.parseInt(value_string.toString()), start_Pos, it.currentPos());
+        return new Token(TokenType.Uint, Integer.parseInt(value_string.toString()), start_Pos, it.currentPos());
     }
 
     private Token lexIdentOrKeyword() throws TokenizeError {
