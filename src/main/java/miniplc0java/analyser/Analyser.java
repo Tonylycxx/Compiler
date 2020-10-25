@@ -291,7 +291,8 @@ public final class Analyser {
             } else if (peeked.getTokenType() == TokenType.Print) {
                 analyseOutputStatement();
             } else if (peeked.getTokenType() == TokenType.Semicolon) {
-                break;
+                next();
+                continue;
             } else {
                 // 都不是，摸了
                 break;
