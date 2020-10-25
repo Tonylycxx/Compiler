@@ -288,11 +288,11 @@ public final class Analyser {
                 // 调用相应的分析函数
                 // 如果遇到其他非终结符的 FIRST 集呢？
                 analyseAssignmentStatement();
-            }else if(peeked.getTokenType() == TokenType.Print) {
+            } else if (peeked.getTokenType() == TokenType.Print) {
                 analyseOutputStatement();
-            } else if(peeked.getTokenType() == TokenType.Semicolon) {
-                continue;
-            } else{
+            } else if (peeked.getTokenType() == TokenType.Semicolon) {
+                break;
+            } else {
                 // 都不是，摸了
                 break;
             }
