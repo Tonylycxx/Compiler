@@ -40,7 +40,7 @@ public class OPG {
     }
 
     public void doPlus() throws Exception {
-        if(stack.pop() == 'N' && stack.pop() == '+' && stack.pop() == 'N') {
+        if (stack.pop() == 'N' && stack.pop() == '+' && stack.pop() == 'N') {
             stack.push('N');
             termLeft.pop();
             System.out.println("R");
@@ -50,7 +50,7 @@ public class OPG {
     }
 
     public void doMul() throws Exception {
-        if(stack.pop() == 'N' && stack.pop() == '*' && stack.pop() == 'N') {
+        if (stack.pop() == 'N' && stack.pop() == '*' && stack.pop() == 'N') {
             stack.push('N');
             termLeft.pop();
             System.out.println("R");
@@ -60,7 +60,7 @@ public class OPG {
     }
 
     public void removeSynthesis() throws Exception {
-        if(stack.pop() == ')' && stack.pop() == 'N' && stack.pop() == '(') {
+        if (stack.pop() == ')' && stack.pop() == 'N' && stack.pop() == '(') {
             stack.push('N');
             termLeft.pop();
             termLeft.pop();
@@ -94,7 +94,7 @@ public class OPG {
             row = this.transChar2Index(termLeft.peek());
         }
         if (this.priority_matrix[row][col] == 0) {
-            if(inputChar == '#')
+            if (inputChar == '#')
                 return;
             termLeft.push(inputChar);
             stack.push(inputChar);
@@ -113,9 +113,10 @@ public class OPG {
         int loc = 0;
         char inputChar;
         while (true) {
-            inputChar = inputString.charAt(loc++);
-            if (inputChar == '\r')
+            if (loc == inputString.length())
                 inputChar = '#';
+            else
+                inputChar = inputString.charAt(loc++);
             if (opg.transChar2Index(inputChar) == -1) {
                 System.out.println("E");
                 return;
@@ -126,11 +127,11 @@ public class OPG {
                 System.out.println(e.getMessage());
                 return;
             }
-            if(inputChar == '#')
+            if (inputChar == '#')
                 break;
             System.out.println("I" + inputChar);
         }
-        if(opg.stack.pop() == 'N' && opg.stack.pop() == '#')
+        if (opg.stack.pop() == 'N' && opg.stack.pop() == '#')
             return;
         else
             System.out.println("RE");
