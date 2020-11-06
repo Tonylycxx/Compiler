@@ -110,6 +110,8 @@ public class OPG {
         FileReader inputReader = new FileReader(inputFile);
         BufferedReader input = new BufferedReader(inputReader);
         String inputString = input.readLine();
+        System.out.println(inputString);
+        return;
         int loc = 0;
         char inputChar;
         while (true) {
