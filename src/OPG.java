@@ -117,7 +117,6 @@ public class OPG {
             if (inputChar == '\r')
                 inputChar = '#';
             if (opg.transChar2Index(inputChar) == -1) {
-                System.out.println("No!");
                 System.out.println("E");
                 return;
             }
