@@ -3,5 +3,5 @@
 image = { source = "dockerfile", path = ".", tag = "opg" }
 
 run = [
-  "java OPG $input",
+  "java -cp ./output OPG $input",
 ]
