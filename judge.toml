@@ -1,6 +1,6 @@
 [jobs.opg]
 
-image = { source = "dockerfile", path = ".", tag = "opg-homework" }
+image = { source = "dockerfile", path = ".", tag = "opg" }
 
 run = [
   "java OPG $input",
