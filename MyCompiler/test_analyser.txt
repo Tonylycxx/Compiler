@@ -1,0 +1,52 @@
+fn test(x: int, y: double, z: double, y1: int, _y: double) -> double {
+    let _12312__asdfa: double = x + y1 + --y2 as double + ----z1 as int as double as int as int as double;
+    let abc123_asd12: int = f1(a, b, _Asdf) + ---y1 + (a + b + z) + -(a * b / c + b);
+    {
+        a = a + 1;
+        fasdf(a, b, c);
+    }
+    while i >= 2 + j + _12341 + z123___q234 {
+        if z1 < z3 {
+            let _123_abc: double;
+            const kk: double = 123.123e-10 + 234.1E+5;
+            return ----(k1 + _abc) as double;
+        } else {
+            let abcabc: int = 123 + 123;
+            if i < abcabc {
+                const lyc: double = 333.3E-4;
+                continue;
+            } else {
+                break;
+            }
+        }
+        break;
+    }
+    return 123.123e-10;
+}
+
+fn main() -> int {
+    let i: int = 0;
+    let j: int;
+    j = getint();
+    while i < j {
+        putint(i);
+        putchar(32);
+        putint(fib(i));
+        putln();
+        i = i + 1;
+    }
+    return 0;
+}
+
+fn fib(x: int) -> int {
+    if x<=1 {
+        return 1;
+    }
+    let result: int = fib(x - 1);
+    result = result + fib(x - 2);
+    return result;
+}
+
+let i: int;
+let j: int = 1;
+const k: double = 1.20;
