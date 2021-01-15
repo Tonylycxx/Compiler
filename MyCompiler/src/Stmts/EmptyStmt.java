@@ -6,4 +6,9 @@ public class EmptyStmt implements Stmt {
     public String toString() {
         return "EmptyStmt{}";
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Empty";
+    }
 }

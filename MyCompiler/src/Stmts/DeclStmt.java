@@ -15,6 +15,10 @@ public class DeclStmt implements Stmt {
         return isConst;
     }
 
+    public void setConst(boolean aConst) {
+        isConst = aConst;
+    }
+
     public Ident getIdent() {
         return ident;
     }
@@ -42,5 +46,10 @@ public class DeclStmt implements Stmt {
                 ", value=" + value +
                 ", type=" + type +
                 '}';
+    }
+
+    @Override
+    public String getStmtTy() {
+        return "Decl";
     }
 }

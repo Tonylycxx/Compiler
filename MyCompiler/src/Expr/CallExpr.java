@@ -27,4 +27,14 @@ public class CallExpr implements Expr {
                 ", params=" + params +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Expr";
+    }
+
+    @Override
+    public String getExprTy() {
+        return "Call";
+    }
 }

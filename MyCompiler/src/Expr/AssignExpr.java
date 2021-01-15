@@ -32,4 +32,14 @@ public class AssignExpr implements Expr {
                 ", canAssignConst=" + canAssignConst +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Expr";
+    }
+
+    @Override
+    public String getExprTy() {
+        return "Assgin";
+    }
 }

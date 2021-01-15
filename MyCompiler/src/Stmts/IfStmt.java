@@ -34,4 +34,9 @@ public class IfStmt implements Stmt {
                 ", elseEle=" + elseEle +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "If";
+    }
 }

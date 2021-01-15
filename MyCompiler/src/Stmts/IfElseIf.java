@@ -18,4 +18,9 @@ public class IfElseIf implements Stmt {
                 "elseIf=" + elseIf +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "ElseIf";
+    }
 }

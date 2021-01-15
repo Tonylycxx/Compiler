@@ -342,6 +342,7 @@ public final class Analyser {
                 params.add(param);
                 continue;
             } else {
+                params.add(param);
                 break;
             }
         }
@@ -364,7 +365,7 @@ public final class Analyser {
 
     private Expr combineExpr(Expr lhs, Token op, Expr rhs) throws CompileError {
         if (op.getTokenType() == TokenType.Assign) {
-            return new AssignExpr(lhs, rhs, false);
+            return new AssignExpr(((UnaryExpr) lhs).getExpr(), rhs, false);
         } else if (isBinaryOp(op)) {
             return new BinaryExpr(lhs, rhs, op.getTokenType());
         } else {

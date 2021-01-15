@@ -7,4 +7,8 @@ public class BreakStmt implements Stmt {
         return "BreakStmt{}";
     }
 
+    @Override
+    public String getStmtTy() {
+        return "Break";
+    }
 }

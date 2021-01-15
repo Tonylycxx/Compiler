@@ -18,4 +18,14 @@ public class TyDef implements Expr {
                 "typeName='" + typeName + '\'' +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Expr";
+    }
+
+    @Override
+    public String getExprTy() {
+        return "TyDef";
+    }
 }

@@ -18,4 +18,9 @@ public class IfElseBlock implements Stmt {
                 "elseBlock=" + elseBlock +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "ElseBlock";
+    }
 }

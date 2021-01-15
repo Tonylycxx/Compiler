@@ -1,5 +1,7 @@
+import RawC0.B0;
 import Stmts.Program;
 import analyser.Analyser;
+import generator.Generator;
 import tokenizer.StringIter;
 import tokenizer.Token;
 import tokenizer.TokenType;
@@ -14,9 +16,15 @@ public class main {
     StringIter it;
 
     public static void main(String[] args) {
+//        String test = "test";
+//        byte[] res = test.getBytes();
+//        for(byte i : res)
+//            System.out.println(i);
+//        long a = 10;
+//        System.out.println(Long.toHexString(a));
         FileInputStream input;
         try {
-            input = new FileInputStream("test_Analyser.txt");
+            input = new FileInputStream("test_generator.txt");
         } catch (FileNotFoundException e) {
             System.err.println("Cannot find this file");
             return;
@@ -26,9 +34,12 @@ public class main {
         StringIter iter = new StringIter(sc);
         Tokenizer tokenizer = new Tokenizer(iter);
         Analyser analyser = new Analyser(tokenizer);
+        Generator generator = new Generator();
         try {
             Program program = analyser.analyseProgram();
-            System.out.println(program);
+//            System.out.println(program);
+            B0 b0 = generator.compileProgram(program);
+            System.out.println(b0);
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -39,7 +50,6 @@ public class main {
 //                if (temp.getTokenType() == TokenType.EOF)
 //                    return;
 //                System.out.println(temp.getValueString());
-////                System.out.println(tokenizer.nextToken());
 //            } catch (Exception e) {
 //                System.out.println("Tokenizer Error");
 ////                return;

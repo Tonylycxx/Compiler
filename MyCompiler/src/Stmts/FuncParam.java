@@ -15,6 +15,18 @@ public class FuncParam {
         this.identType = identType;
     }
 
+    public boolean isConst() {
+        return isConst;
+    }
+
+    public Ident getIdentName() {
+        return identName;
+    }
+
+    public TyDef getIdentType() {
+        return identType;
+    }
+
     @Override
     public String toString() {
         return "FuncParam{" +

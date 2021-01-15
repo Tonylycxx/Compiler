@@ -27,4 +27,14 @@ public class LiteralExpr implements Expr {
                 ", value=" + value +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Expr";
+    }
+
+    @Override
+    public String getExprTy() {
+        return "Literal";
+    }
 }

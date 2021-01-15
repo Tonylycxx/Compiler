@@ -4,6 +4,6 @@ public enum LiteralType {
 
     Integer,
     Float,
-    String
+    String,
 
 }

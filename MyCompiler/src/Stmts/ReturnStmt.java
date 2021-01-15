@@ -20,4 +20,9 @@ public class ReturnStmt implements Stmt {
                 "retExpr=" + retExpr +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Return";
+    }
 }

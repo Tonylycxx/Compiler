@@ -25,4 +25,14 @@ public class AsExpr implements Expr {
                 ", expr=" + expr +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Expr";
+    }
+
+    @Override
+    public String getExprTy() {
+        return "As";
+    }
 }

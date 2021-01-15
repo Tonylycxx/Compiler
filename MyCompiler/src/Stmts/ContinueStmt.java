@@ -6,4 +6,9 @@ public class ContinueStmt implements Stmt {
     public String toString() {
         return "ContinueStmt{}";
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Continue";
+    }
 }

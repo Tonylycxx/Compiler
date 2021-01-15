@@ -35,4 +35,14 @@ public class BinaryExpr implements Expr {
                 ", binaryOp=" + binaryOp +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Expr";
+    }
+
+    @Override
+    public String getExprTy() {
+        return "Binary";
+    }
 }

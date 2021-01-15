@@ -20,4 +20,9 @@ public class BlockStmt implements Stmt {
                 "blockStmts=" + blockStmts +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Block";
+    }
 }

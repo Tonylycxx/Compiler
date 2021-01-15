@@ -27,4 +27,9 @@ public class WhileStmt implements Stmt {
                 ", whileBlock=" + whileBlock +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "While";
+    }
 }

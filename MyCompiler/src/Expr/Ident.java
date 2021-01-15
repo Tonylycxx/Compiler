@@ -18,4 +18,14 @@ public class Ident implements Expr {
                 "identName='" + identName + '\'' +
                 '}';
     }
+
+    @Override
+    public String getStmtTy() {
+        return "Expr";
+    }
+
+    @Override
+    public String getExprTy() {
+        return "Ident";
+    }
 }

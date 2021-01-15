@@ -114,7 +114,7 @@ public class Tokenizer {
             }
         } else {
             token = tokenBuiler.toString();
-            return new Token(TokenType.UIntLiteral, Integer.parseInt(token), startPos, it.currentPos());
+            return new Token(TokenType.UIntLiteral, Long.parseLong(token), startPos, it.currentPos());
         }
 
     }

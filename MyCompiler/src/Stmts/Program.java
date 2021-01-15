@@ -12,6 +12,14 @@ public class Program {
         this.decls = decls;
     }
 
+    public ArrayList<FuncStmt> getFuncs() {
+        return funcs;
+    }
+
+    public ArrayList<DeclStmt> getDecls() {
+        return decls;
+    }
+
     @Override
     public String toString() {
         return "Program{" + '\n' +
