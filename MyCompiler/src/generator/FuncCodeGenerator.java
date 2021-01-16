@@ -340,7 +340,7 @@ public class FuncCodeGenerator {
     }
 
     private Ty getTyNonVoid(TyDef tyDef) throws Exception {
-        if (tyDef.getTypeName().equals("Int")) {
+        if (tyDef.getTypeName().equals("int")) {
             return new IntTy();
         } else if (tyDef.getTypeName().equals("double")) {
             return new DoubleTy();
