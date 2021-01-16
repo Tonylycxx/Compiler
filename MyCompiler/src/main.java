@@ -8,6 +8,7 @@ import tokenizer.Token;
 import tokenizer.TokenType;
 import tokenizer.Tokenizer;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -25,7 +26,8 @@ public class main {
 //        System.out.println(Long.toHexString(a));
         FileInputStream input;
         try {
-            input = new FileInputStream("test_generator.txt");
+            File inputFile = new File(args[0]);
+            input = new FileInputStream(inputFile);
         } catch (FileNotFoundException e) {
             System.err.println("Cannot find this file");
             return;
@@ -41,7 +43,7 @@ public class main {
 //            System.out.println(program);
             B0 b0 = generator.compileProgram(program);
 //            System.out.println(b0);
-            C0 c0 = new C0(b0, "res.txt");
+            C0 c0 = new C0(b0, args[1]);
             c0.writeCodeToFile();
         } catch (Exception e) {
             System.out.println(e);
