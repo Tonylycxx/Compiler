@@ -86,7 +86,7 @@ public class FuncCodeGenerator {
                 var indexTrue = BB.jump.ifTrueJump;
                 var indexFalse = BB.jump.ifFalseJump;
                 resCode.add(new Ins(new TwoTuple<>(Op.brtrue, startOffset.get(arrange.indexOf(indexTrue)) - resCode.size() - 1)));
-                resCode.add(new Ins(new TwoTuple<>(Op.brfalse, startOffset.get(arrange.indexOf(indexFalse)) - resCode.size() - 1)));
+                resCode.add(new Ins(new TwoTuple<>(Op.br, startOffset.get(arrange.indexOf(indexFalse)) - resCode.size() - 1)));
             } else {
             }
         }
