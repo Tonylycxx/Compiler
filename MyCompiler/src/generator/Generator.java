@@ -138,6 +138,13 @@ public class Generator {
         }
         {
             ArrayList<Ty> params = new ArrayList<>();
+            params.add(new IntTy());
+            var funcTy = new FuncTy(params, new VoidTy());
+            var symbol = new Symbol(funcTy, true);
+            scope.insert("putstr", symbol);
+        }
+        {
+            ArrayList<Ty> params = new ArrayList<>();
             var funcTy = new FuncTy(params, new IntTy());
             var symbol = new Symbol(funcTy, true);
             scope.insert("getchar", symbol);

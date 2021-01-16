@@ -361,7 +361,7 @@ public class FuncCodeGenerator {
         } else if (expr.getLiteralType() == LiteralType.String) {
             var valID = scope.getNextId();
             var globalID = globalEntries.insertStringLiteral(expr.getValue().getValueString(), valID);
-            appendCode(curBBId, new Ins(new TwoTuple<>(Op.push, globalID)));
+            appendCode(curBBId, new Ins(new TwoTuple<>(Op.push, (long) globalID)));
             return new IntTy();
         } else {
             throw new Exception("InvalidLiteralType!");
