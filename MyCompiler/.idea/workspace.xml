@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b635dbcd-8b28-4d6d-a9b2-d1883aea2762" name="Default Changelist" comment="modify">
+    <list default="true" id="3084615b-0503-48ac-b351-d61acae206b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/debugger.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navm-windows-amd64.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res.o0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCompiler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyCompiler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyCompiler/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyCompiler/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyCompiler/tokenizer/StringIter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyCompiler/tokenizer/StringIter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tokenizer/StringIter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tokenizer/StringIter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,25 +20,16 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="87wbzslo" />
+    <option name="directoryName" value="8mao01sl" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1mJvt0pHrtOdtpGfsBGSYvsaJ90" />
+  <component name="ProjectId" id="1n8mzy6FS9dYhjxwhYlnT0LdHTv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -41,17 +38,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="restartRequiresConfirmation" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="RawC0" />
-      <recent name="generator" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -61,15 +53,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,34 +73,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b635dbcd-8b28-4d6d-a9b2-d1883aea2762" name="Default Changelist" comment="" />
-      <created>1609224743540</created>
+      <changelist id="3084615b-0503-48ac-b351-d61acae206b5" name="Default Changelist" comment="" />
+      <created>1610780359591</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1609224743540</updated>
-      <workItem from="1609224757034" duration="1478000" />
-      <workItem from="1609252435096" duration="7786000" />
-      <workItem from="1609311449571" duration="10263000" />
-      <workItem from="1609332781350" duration="21885000" />
-      <workItem from="1609420037765" duration="6198000" />
-      <workItem from="1609438188091" duration="196000" />
-      <workItem from="1609471843223" duration="14323000" />
-      <workItem from="1609511223287" duration="7038000" />
-      <workItem from="1609598806760" duration="1644000" />
-      <workItem from="1609636802900" duration="292000" />
-      <workItem from="1609645211255" duration="1448000" />
-      <workItem from="1609770530995" duration="3965000" />
-      <workItem from="1610545857072" duration="7194000" />
-      <workItem from="1610593681135" duration="58874000" />
+      <updated>1610780359591</updated>
+      <workItem from="1610780367568" duration="3423000" />
     </task>
-    <task id="LOCAL-00001" summary="modify">
-      <created>1610774017061</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1610774017061</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,56 +95,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modify" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="java.lang.Integer" memberName="value" />
-      </pinned-members>
-    </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="((HashMap.Node)globalEntries.vars.dataMap.entrySet().toArray()[2]).getValue()" custom="java.util.HashMap.Node" />
-        <watch expression="((HashMap.Node)globalEntries.vars.dataMap.entrySet().toArray()[2]).getValue()" custom="java.util.HashMap.Node" />
-        <watch expression="((HashMap.Node)globalEntries.vars.dataMap.entrySet().toArray()[2]).getValue()" custom="java.util.HashMap.Node" />
-        <watch expression="scope" />
-        <watch expression="arrange.get(1)" />
-        <watch expression="funcTy" />
-        <watch expression="unaryOp.name" />
-        <watch expression="unaryOp.name" language="JAVA" />
-        <watch expression="unaryOp.name" language="JAVA" />
-        <watch expression="this" />
-        <watch expression="funcDef.instructions.get(55)" />
-        <watch expression="scope.vars.entrySet().toArray()[1]" />
-        <watch expression="scope.vars" />
-        <watch expression="BBArranger.BBs.get(1).code" />
-        <watch expression="BBArranger.BBs.get(2).code" />
-        <watch expression="BBArranger.vis" />
-        <watch expression="BBs.get(3)" />
-        <watch expression="BBArranger" />
-        <watch expression="globalScope" />
-        <watch expression="program" />
-        <watch expression="program" language="JAVA" />
-        <watch expression="program" language="JAVA" />
-        <watch expression="this.BBs.get(4).code" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MyCompiler$main.ic" NAME="main Coverage Results" MODIFIED="1610719674628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
