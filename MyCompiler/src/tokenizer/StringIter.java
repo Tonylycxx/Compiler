@@ -43,6 +43,8 @@ public class StringIter {
         while (scanner.hasNext()) {
             linesBuffer.add(scanner.nextLine() + '\n');
         }
+        for(int i = 0; i < linesBuffer.size(); i++)
+            System.out.print(linesBuffer.get(i));
         // todo:check read \n?
         initialized = true;
     }

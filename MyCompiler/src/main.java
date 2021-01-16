@@ -28,6 +28,7 @@ public class main {
         try {
             File inputFile = new File(args[1]);
             input = new FileInputStream(inputFile);
+            
         } catch (FileNotFoundException e) {
             System.err.println("Cannot find this file");
             return;
