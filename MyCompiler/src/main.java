@@ -39,17 +39,13 @@ public class main {
         Tokenizer tokenizer = new Tokenizer(iter);
         Analyser analyser = new Analyser(tokenizer);
         Generator generator = new Generator();
-        try {
-            Program program = analyser.analyseProgram();
+        Program program = analyser.analyseProgram();
 //            System.out.println(program);
-            B0 b0 = generator.compileProgram(program);
-            System.out.println(b0);
+        B0 b0 = generator.compileProgram(program);
+        System.out.println(b0);
 //            C0 c0 = new C0(b0, args[3]);
-            C0 c0 = new C0(b0, "res.txt");
-            c0.writeCodeToFile();
-        } catch (Exception e) {
-            throw e;
-        }
+        C0 c0 = new C0(b0, "res.txt");
+        c0.writeCodeToFile();
 //        Token temp;
 //        while (true) {
 //            try {

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3084615b-0503-48ac-b351-d61acae206b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/debugger.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navm-windows-amd64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res.o0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyCompiler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyCompiler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyCompiler/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyCompiler/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyCompiler/tokenizer/StringIter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyCompiler/tokenizer/StringIter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610780359591</updated>
-      <workItem from="1610780367568" duration="3423000" />
+      <workItem from="1610780367568" duration="4036000" />
     </task>
     <servers />
   </component>
