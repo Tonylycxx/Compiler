@@ -26,8 +26,7 @@ public class main {
 //        System.out.println(Long.toHexString(a));
         FileInputStream input;
         try {
-            System.out.println(args[0] + args[1]);
-            File inputFile = new File(args[0]);
+            File inputFile = new File(args[1]);
             input = new FileInputStream(inputFile);
         } catch (FileNotFoundException e) {
             System.err.println("Cannot find this file");
@@ -44,7 +43,7 @@ public class main {
 //            System.out.println(program);
             B0 b0 = generator.compileProgram(program);
             System.out.println(b0);
-            C0 c0 = new C0(b0, args[1]);
+            C0 c0 = new C0(b0, args[3]);
             c0.writeCodeToFile();
         } catch (Exception e) {
             System.out.println(e);
