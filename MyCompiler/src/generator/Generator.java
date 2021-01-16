@@ -11,6 +11,7 @@ import error.DuplicateDeclError;
 import error.ParamIsVoidError;
 import error.TypeNotExistsError;
 import generator.type.*;
+import util.HandleBytes;
 import util.TwoTuple;
 
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class Generator {
         createLibFuncs(globalScope);
         for (var decl : program.getDecls()) {
             var symbolInfo = addDeclToScope(decl, globalScope);
-            globalEntries.vars.put(symbolInfo.getPos(), globalEntries.vars.getKeySetLength(), new ArrayList<Byte>());
+            globalEntries.vars.put(symbolInfo.getPos(), globalEntries.vars.getKeySetLength(), HandleBytes.handleLong((long) 0));
         }
         globalEntries.functions.add("_start");
         for (var func : program.getFuncs()) {

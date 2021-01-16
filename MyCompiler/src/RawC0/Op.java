@@ -62,10 +62,10 @@ public enum Op {
     println(0x58),
     panic(0xfe);
 
-    public int optnum;
+    public byte optnum;
 
     Op(int optnum) {
-        this.optnum = optnum;
+        this.optnum = (byte) optnum;
     }
 
 }

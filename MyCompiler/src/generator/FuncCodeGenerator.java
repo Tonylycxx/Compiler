@@ -85,8 +85,8 @@ public class FuncCodeGenerator {
             } else if (BB.jump.jumpTy.equals("JumpIf")) {
                 var indexTrue = BB.jump.ifTrueJump;
                 var indexFalse = BB.jump.ifFalseJump;
-                resCode.add(new Ins(new TwoTuple<>(Op.brtrue, startOffset.get(indexTrue) - resCode.size() - 1)));
-                resCode.add(new Ins(new TwoTuple<>(Op.brfalse, startOffset.get(indexFalse) - resCode.size() - 1)));
+                resCode.add(new Ins(new TwoTuple<>(Op.brtrue, startOffset.get(arrange.indexOf(indexTrue)) - resCode.size() - 1)));
+                resCode.add(new Ins(new TwoTuple<>(Op.brfalse, startOffset.get(arrange.indexOf(indexFalse)) - resCode.size() - 1)));
             } else {
             }
         }
@@ -189,13 +189,13 @@ public class FuncCodeGenerator {
             return endBB;
         } else if (stmt.getElseEle().getStmtTy().equals("ElseBlock")) {
             var bbFalse = newBB();
-            var elseEnd = compileBlock((BlockStmt) stmt.getElseEle(), bbFalse, scope);
+            var elseEnd = compileBlock(((IfElseBlock) stmt.getElseEle()).getElseBlock(), bbFalse, scope);
             setJump(elseEnd, new JumpInst("Jump", endBB));
             setJump(curBBId, new JumpInst("JumpIf", bbTrue, bbFalse));
             return endBB;
         } else if (stmt.getElseEle().getStmtTy().equals("ElseIf")) {
             var bbFalse = newBB();
-            var elseEnd = compileIf((IfStmt) stmt.getElseEle(), bbFalse, scope);
+            var elseEnd = compileIf(((IfElseIf) stmt.getElseEle()).getElseIf(), bbFalse, scope);
             setJump(elseEnd, new JumpInst("Jump", endBB));
             setJump(curBBId, new JumpInst("JumpIf", bbTrue, bbFalse));
             return endBB;
