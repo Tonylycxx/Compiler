@@ -1,4 +1,4 @@
 FROM openjdk:14
 WORKDIR /app/
-COPY folder ./MyCompiler/src ./
+COPY ./MyCompiler/* ./
 RUN javac .main.java
