@@ -26,6 +26,7 @@ public class main {
 //        System.out.println(Long.toHexString(a));
         FileInputStream input;
         try {
+            System.out.println(args[0] + args[1]);
             File inputFile = new File(args[0]);
             input = new FileInputStream(inputFile);
         } catch (FileNotFoundException e) {
