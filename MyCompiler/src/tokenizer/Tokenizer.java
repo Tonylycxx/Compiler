@@ -150,7 +150,7 @@ public class Tokenizer {
         StringBuilder tokenBuiler = new StringBuilder("");
         char lastChar = it.nextChar();
         tokenBuiler.append(lastChar);
-        while ((it.peekChar() != '"' || lastChar == '\\') && !Character.isWhitespace(it.peekChar())) {
+        while (it.peekChar() != '"' || lastChar == '\\') {
             lastChar = it.nextChar();
             tokenBuiler.append(lastChar);
         }
