@@ -72,22 +72,6 @@ public final class Analyser {
     }
 
     /**
-     * 如果下一个 token 的类型是 tt，则前进一个 token 并返回这个 token
-     *
-     * @param tt 类型
-     * @return 如果匹配则返回这个 token，否则返回 null
-     * @throws TokenizeError
-     */
-    private Token nextIf(TokenType tt) throws TokenizeError {
-        var token = peek();
-        if (token.getTokenType() == tt) {
-            return next();
-        } else {
-            return null;
-        }
-    }
-
-    /**
      * 如果下一个 token 的类型是 tt，则前进一个 token 并返回，否则抛出异常
      *
      * @param tt 类型

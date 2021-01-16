@@ -94,10 +94,13 @@ public class IO {
         this.writeU8OrI8(op.optnum);
         if (param != null) {
             if (ins.getParamLen(op.optnum) == 8) {
-                if(param.getClass() == Long.class) {
+                if (param.getClass() == Long.class) {
                     this.writeU64OrI64((long) param);
                 } else if (param.getClass() == Double.class) {
                     this.writeU64OrI64((double) param);
+                } else if (param.getClass() == String.class) {
+                    var c = ((String) param).charAt(0);
+                    this.writeU64OrI64((long) c);
                 } else {
                     throw new Exception("Cannot reach here! Invalid U64 Type!");
                 }
