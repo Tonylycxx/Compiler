@@ -42,7 +42,7 @@ public class main {
             Program program = analyser.analyseProgram();
 //            System.out.println(program);
             B0 b0 = generator.compileProgram(program);
-            System.out.println(b0);
+//            System.out.println(b0);
             C0 c0 = new C0(b0, args[3]);
             c0.writeCodeToFile();
         } catch (Exception e) {
