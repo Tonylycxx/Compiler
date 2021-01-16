@@ -436,6 +436,8 @@ public class FuncCodeGenerator {
                 res.add(new Ins(new TwoTuple<>(Op.subi, null)));
             } else if (binaryOp == TokenType.Mul) {
                 res.add(new Ins(new TwoTuple<>(Op.muli, null)));
+            } else if (binaryOp == TokenType.Div) {
+                res.add(new Ins(new TwoTuple<>(Op.divi, null)));
             } else if (binaryOp == TokenType.Gt) {
                 res.add(new Ins(new TwoTuple<>(Op.cmpi, null)));
                 res.add(new Ins(new TwoTuple<>(Op.setgt, null)));
@@ -466,6 +468,8 @@ public class FuncCodeGenerator {
                 res.add(new Ins(new TwoTuple<>(Op.subf, null)));
             } else if (binaryOp == TokenType.Mul) {
                 res.add(new Ins(new TwoTuple<>(Op.mulf, null)));
+            } else if (binaryOp == TokenType.Div) {
+                res.add(new Ins(new TwoTuple<>(Op.divf, null)));
             } else if (binaryOp == TokenType.Gt) {
                 res.add(new Ins(new TwoTuple<>(Op.cmpf, null)));
                 res.add(new Ins(new TwoTuple<>(Op.setgt, null)));
