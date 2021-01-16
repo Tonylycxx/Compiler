@@ -17,7 +17,7 @@ public class main {
 
     StringIter it;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 //        String test = "test";
 //        byte[] res = test.getBytes();
 //        for(byte i : res)
@@ -26,8 +26,8 @@ public class main {
 //        System.out.println(Long.toHexString(a));
         FileInputStream input;
         try {
-//            File inputFile = new File(args[1]);
-            File inputFile = new File("debugger.txt");
+            File inputFile = new File(args[1]);
+//            File inputFile = new File("debugger.txt");
             input = new FileInputStream(inputFile);
         } catch (FileNotFoundException e) {
             System.err.println("Cannot find this file");
@@ -43,12 +43,12 @@ public class main {
             Program program = analyser.analyseProgram();
 //            System.out.println(program);
             B0 b0 = generator.compileProgram(program);
-            System.out.println(b0);
-//            C0 c0 = new C0(b0, args[3]);
-            C0 c0 = new C0(b0, "res.txt");
+//            System.out.println(b0);
+            C0 c0 = new C0(b0, args[3]);
+//            C0 c0 = new C0(b0, "res.txt");
             c0.writeCodeToFile();
         } catch (Exception e) {
-            System.out.println(e);
+            throw e;
         }
 //        Token temp;
 //        while (true) {
