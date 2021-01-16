@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b635dbcd-8b28-4d6d-a9b2-d1883aea2762" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="87wbzslo" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1mJvt0pHrtOdtpGfsBGSYvsaJ90" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="RawC0" />
+      <recent name="generator" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="MyCompiler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b635dbcd-8b28-4d6d-a9b2-d1883aea2762" name="Default Changelist" comment="" />
+      <created>1609224743540</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609224743540</updated>
+      <workItem from="1609224757034" duration="1478000" />
+      <workItem from="1609252435096" duration="7786000" />
+      <workItem from="1609311449571" duration="10263000" />
+      <workItem from="1609332781350" duration="21885000" />
+      <workItem from="1609420037765" duration="6198000" />
+      <workItem from="1609438188091" duration="196000" />
+      <workItem from="1609471843223" duration="14323000" />
+      <workItem from="1609511223287" duration="7038000" />
+      <workItem from="1609598806760" duration="1644000" />
+      <workItem from="1609636802900" duration="292000" />
+      <workItem from="1609645211255" duration="1448000" />
+      <workItem from="1609770530995" duration="3965000" />
+      <workItem from="1610545857072" duration="7194000" />
+      <workItem from="1610593681135" duration="55927000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.Integer" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((HashMap.Node)globalEntries.vars.dataMap.entrySet().toArray()[2]).getValue()" custom="java.util.HashMap.Node" />
+        <watch expression="((HashMap.Node)globalEntries.vars.dataMap.entrySet().toArray()[2]).getValue()" custom="java.util.HashMap.Node" />
+        <watch expression="((HashMap.Node)globalEntries.vars.dataMap.entrySet().toArray()[2]).getValue()" custom="java.util.HashMap.Node" />
+        <watch expression="scope" />
+        <watch expression="arrange.get(1)" />
+        <watch expression="funcTy" />
+        <watch expression="unaryOp.name" />
+        <watch expression="unaryOp.name" language="JAVA" />
+        <watch expression="unaryOp.name" language="JAVA" />
+        <watch expression="this" />
+        <watch expression="funcDef.instructions.get(55)" />
+        <watch expression="scope.vars.entrySet().toArray()[1]" />
+        <watch expression="scope.vars" />
+        <watch expression="BBArranger.BBs.get(1).code" />
+        <watch expression="BBArranger.BBs.get(2).code" />
+        <watch expression="BBArranger.vis" />
+        <watch expression="BBs.get(3)" />
+        <watch expression="BBArranger" />
+        <watch expression="globalScope" />
+        <watch expression="program" />
+        <watch expression="program" language="JAVA" />
+        <watch expression="program" language="JAVA" />
+        <watch expression="this.BBs.get(4).code" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MyCompiler$main.ic" NAME="main Coverage Results" MODIFIED="1610719674628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
