@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3084615b-0503-48ac-b351-d61acae206b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generator/FuncCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/FuncCodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debugger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/debugger.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyCompiler/generator/FuncCodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyCompiler/generator/FuncCodeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyCompiler/generator/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyCompiler/generator/Generator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res.o0" beforeDir="false" afterPath="$PROJECT_DIR$/res.o0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator/Generator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunManager">
@@ -72,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610780359591</updated>
-      <workItem from="1610780367568" duration="8938000" />
+      <workItem from="1610780367568" duration="13669000" />
     </task>
     <servers />
   </component>
@@ -97,9 +102,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/generator/Generator.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -111,6 +116,8 @@
         <watch expression="((java.util.ArrayList)((BB)((ArrayList)((FuncCodeGenerator)this).BBs).get(4)).code).get(4)" custom="generator.FuncCodeGenerator,generator.BB,java.util.ArrayList" />
         <watch expression="resCode" />
         <watch expression="resCode.get(35)" />
+        <watch expression="program" />
+        <watch expression="((BB)((ArrayList)((FuncCodeGenerator)this).BBs).get(0)).code" custom="generator.FuncCodeGenerator,generator.BB,java.util.ArrayList" />
       </configuration>
     </watches-manager>
   </component>

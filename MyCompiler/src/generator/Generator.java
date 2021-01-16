@@ -3,9 +3,7 @@ package generator;
 import Expr.CallExpr;
 import Expr.Ident;
 import Expr.TyDef;
-import RawC0.B0;
-import RawC0.FnDef;
-import RawC0.GlobalValue;
+import RawC0.*;
 import Stmts.*;
 import error.DuplicateDeclError;
 import error.ParamIsVoidError;
@@ -67,6 +65,10 @@ public class Generator {
         BlockStmt blockStmt = new BlockStmt(stmts);
         var startFunc = new FuncStmt(new Ident("_start"), params, new TyDef("void"), blockStmt);
         var func = compileFunc(startFunc, globalScope, globalEntries);
+        for(int i = 0; i < func.instructions.size(); i++) {
+            if(func.instructions.get(i).ins.getPos() == Op.loca)
+                func.instructions.set(i, new Ins(new TwoTuple<>(Op.globa, func.instructions.get(i).ins.getVal())));
+        }
         func.instructions.remove(func.instructions.size() - 1);
         return func;
     }
@@ -77,7 +79,7 @@ public class Generator {
         var funTy = new FuncTy(params, retTy);
         var symbol = new Symbol(funTy, true);
         scope.insert(func.getFuncName().getIdentName(), symbol);
-        globalEntries.functions.add(func.getFuncName().getIdentName());
+//        globalEntries.functions.add(func.getFuncName().getIdentName());
 
         var funcCode = new FuncCodeGenerator(func, scope, globalEntries);
         return funcCode.complie();

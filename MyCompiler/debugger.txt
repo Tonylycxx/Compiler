@@ -1,20 +1,27 @@
+let i: int = 2;
+
+fn foo() -> int {
+    let i: int = 1;
+    putint(i);
+    putln();
+    return i;
+}
+
+fn bar() -> void {
+    putint(i);
+    putln();
+    i = i + 1;
+}
+
 fn main() -> void {
-    let counter: int = 10;
-    while counter > 0 {
-        counter = counter - 1;
-        if counter == 8 {
-            counter = 4;
-            continue;
-        }
-        if counter == 0 {
-            break;
-        }
-        while 1 {
-            if counter > 0 {
-                putint(counter);
-                putln();
-                break;
-            }
-        }
-    }
+    let i: int = 1;
+    putint(i);
+    putln();
+    putint(foo());
+    putln();
+    bar();
+    bar();
+    bar();
+    putint(foo());
+    putln();
 }
