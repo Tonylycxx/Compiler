@@ -17,7 +17,7 @@ public class main {
 
     StringIter it;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 //        String test = "test";
 //        byte[] res = test.getBytes();
 //        for(byte i : res)
@@ -39,13 +39,17 @@ public class main {
         Tokenizer tokenizer = new Tokenizer(iter);
         Analyser analyser = new Analyser(tokenizer);
         Generator generator = new Generator();
-        Program program = analyser.analyseProgram();
+        try {
+            Program program = analyser.analyseProgram();
 //            System.out.println(program);
-        B0 b0 = generator.compileProgram(program);
-        System.out.println(b0);
+            B0 b0 = generator.compileProgram(program);
+            System.out.println(b0);
 //            C0 c0 = new C0(b0, args[3]);
-        C0 c0 = new C0(b0, "res.txt");
-        c0.writeCodeToFile();
+            C0 c0 = new C0(b0, "res.txt");
+            c0.writeCodeToFile();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 //        Token temp;
 //        while (true) {
 //            try {
